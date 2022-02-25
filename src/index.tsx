@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './components/Navbar';
-import Index from './components/Index';
+import Index from './pages/Home';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 ReactDOM.render(

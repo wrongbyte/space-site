@@ -1,0 +1,64 @@
+/* Default: desktop view*/
+:root {
+    --desktop-index-image: url('../assets/home/background-home-desktop.jpg');
+    --tablet-index-image: url('../assets/home/background-home-tablet.jpg');
+    --mobile-index-image: url('../assets/home/background-home-mobile.jpg');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+body {
+    background-image: var(--desktop-index-image);
+    margin: 0; padding: 0;
+}
+
+.info {
+    position: absolute;
+    top: 38vh;
+    color: white;
+    position: absolute;
+    left: 165px;
+    width: 450px;
+    height: 382px;
+}
+
+.first-phrase {
+    display: block;
+    letter-spacing: 4.725px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+}
+
+.space-text {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+}
+.space-paragraph {
+    font-family: Barlow;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.explore {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+}
+
+#circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 18vh;
+    right: 13vw;
+    background: white;
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+}
+
+/* Tablet view */
+
+/* Phone view */

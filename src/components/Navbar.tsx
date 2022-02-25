@@ -13,7 +13,9 @@ export default function Navbar() {
 
             <div className='navbar-background'></div>
             <div className='pages-wrapper'>
+                
                 <span id='home' className='nav-item active-page'><b>00</b><span className='page-name'>HOME</span></span>
+
                 <span id='destination' className='nav-item'><b>01</b> <span className='page-name'>DESTINATION</span></span>
                 
                 <span id='crew' className='nav-item'><b>02</b><span className='page-name'>CREW</span></span>
