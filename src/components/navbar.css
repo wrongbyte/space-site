@@ -1,0 +1,66 @@
+/* Default: desktop view*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+/* * { border: 1px solid red; } */
+
+.navbar-div {
+    font-family: 'Barlow Condensed', sans-serif;
+    position: fixed;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 100%;
+    height: 80px;
+}
+
+.line {
+    position: relative;
+    display: inline;
+    margin-left: 100px;
+}
+.line > hr {
+    display: inline;
+    color:thistle;
+    opacity: 20%;
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    width: 34vw;
+}
+#logo {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.navbar-background {
+    position: absolute;
+    z-index: -1;
+    margin-right: -30px;
+    padding:0px;
+    left: 40vw;
+    top: -5px;
+    width: 830px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(81.5485px);
+}
+
+.page-name {
+    padding-left: 15px;
+}
+
+.pages-wrapper {
+    position: absolute;
+    top: -5px;
+    right: 15vw;
+    display: flex;
+    gap: 60px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    color: white;
+}
+
+/* Tablet view */
+
+/* Phone view */
