@@ -39,7 +39,7 @@
     left: 40vw;
     top: -5px;
     width: 830px;
-    height: 100px;
+    height: 90px;
     background: rgba(255, 255, 255, 0.04);
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(81.5485px);
@@ -47,6 +47,16 @@
 
 .page-name {
     padding-left: 15px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.active-page {
+    border-bottom: 3px solid white;
 }
 
 .pages-wrapper {
@@ -57,7 +67,7 @@
     gap: 60px;
     justify-content: flex-end;
     align-items: center;
-    height: 100px;
+    height: 90px;
     color: white;
 }
 
