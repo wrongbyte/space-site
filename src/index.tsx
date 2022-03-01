@@ -1,18 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './components/Navbar';
-import Index from './pages/Home';
+import Home from './pages/Home';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Destination from './pages/Destination';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Index/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/destination" element={<Destination/>}/>
       </Routes>
     </Router>
   </React.StrictMode>,

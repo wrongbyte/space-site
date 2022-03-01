@@ -1,0 +1,15 @@
+:root {
+    --desktop-destination-image: url('../assets/destination/background-destination-desktop.jpg');
+    --tablet-destination-image: url('../assets/destination/background-destination-tablet.jpg');
+    --mobile-destination-image: url('../assets/destination/background-destination-mobile.jpg');
+}
+
+.destination {
+    background: var(--desktop-destination-image) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+}
+

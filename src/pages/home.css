@@ -9,9 +9,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
-body {
-    background-image: var(--desktop-index-image);
-    margin: 0; padding: 0;
+
+.homepage {
+    background: var(--desktop-index-image) no-repeat center center fixed; 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
 }
 
 .info {
@@ -60,5 +65,12 @@ body {
 }
 
 /* Tablet view */
+@media(max-width:1000px) {
+    .homepage{
+        background: var(--tablet-index-image) no-repeat;
+        background-position:center ;
+        background-size: cover;
+    }
+}
 
 /* Phone view */
