@@ -4,6 +4,11 @@
 
 /* * { border: 1px solid red; } */
 
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+
 .navbar-div {
     font-family: 'Barlow Condensed', sans-serif;
     position: fixed;
@@ -50,6 +55,7 @@
 }
 
 .nav-item {
+    cursor: pointer;
     display: flex;
     align-items: center;
     height: 100%;
