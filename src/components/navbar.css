@@ -23,13 +23,13 @@ a {
     display: inline;
     margin-left: 100px;
 }
+
 .line > hr {
-    display: inline;
     color:thistle;
+    position: relative;
+    top: -30px;
+    left: 10vw;
     opacity: 20%;
-    position: absolute;
-    top: -20px;
-    left: -50px;
     width: 34vw;
 }
 #logo {
@@ -38,7 +38,6 @@ a {
 }
 .navbar-background {
     position: absolute;
-    z-index: -1;
     margin-right: -30px;
     padding:0px;
     left: 40vw;
