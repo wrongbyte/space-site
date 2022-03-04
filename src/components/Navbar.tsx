@@ -19,7 +19,7 @@ export default function Navbar() {
                 
                 <span id='destination' className='nav-item'><b>01</b><span className='page-name'><Link to='/destination'>DESTINATION</Link></span></span>
                 
-                <span id='crew' className='nav-item'><b>02</b><span className='page-name'>CREW</span></span>
+                <span id='crew' className='nav-item'><b>02</b><span className='page-name'><Link to='/crew'>CREW</Link></span></span>
                 
                 <span id='technology' className='nav-item'><b>03</b><span className='page-name'>TECHNOLOGY</span></span>
 

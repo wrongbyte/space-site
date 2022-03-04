@@ -4,11 +4,11 @@ import { useState } from 'react';
 
 export default function Destination() {
     const [destinationIndex, setDestinationIndex] = useState(0);
-    const getDestinationIndex = (e: any, value: number) => setDestinationIndex(value)
+    const getDestinationIndex = (e: any, value: number) => setDestinationIndex(value);
 
     return (
         <main className="destination">
-            <span className='pick-destination'><span className='destination-number'>01</span> PICK YOUR DESTINATION</span>
+            <span className='page-title'><span className='page-number'>01</span> PICK YOUR DESTINATION</span>
 
             <img src={data.destinations[destinationIndex].images.png} className='destination-image'></img>
 
@@ -19,10 +19,10 @@ export default function Destination() {
                         data.destinations.map((destination, index) => {
                             if (index === destinationIndex) {
                                 return (
-                                    <span onClick={(event) => { getDestinationIndex(event, index); }} key ={index} className='nav-item active-destination' data-index={index}>{destination.name}</span>
+                                    <span onClick={(event) => { getDestinationIndex(event, index); }} key={index} className='nav-item active-destination' data-index={index}>{destination.name}</span>
                                 )
                             }  else return (
-                                <span onClick={(event) => { getDestinationIndex(event, index); }} key ={index} className='nav-item' data-index={index}>{destination.name}</span>
+                                <span onClick={(event) => { getDestinationIndex(event, index); }} key={index} className='nav-item' data-index={index}>{destination.name}</span>
                             )
                         })
                     }

@@ -1,0 +1,90 @@
+:root {
+    --desktop-crew-image: url('../assets/crew/background-crew-desktop.jpg');
+    --tablet-crew-image: url('../assets/crew/background-crew-tablet.jpg');
+    --mobile-crew-image: url('../assets/crew/background-crew-mobile.jpg');
+}
+
+.crew {
+    background: var(--desktop-crew-image) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100%;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+    color: white;
+    bottom:0px;
+}
+
+.crew-info {
+    position: absolute;
+    left: 10vw;
+    bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 20px;
+}
+
+.role, .name {
+    text-transform: uppercase;
+}
+.role {
+    opacity: 0.5;
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.name {
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.bio {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    width: 444px;
+}
+
+.crew-image {
+    position: absolute;
+    height: 75%;
+    width: auto;
+    right: 10vw;
+    bottom: 0px;
+}
+
+.crew-navbar {
+    margin-top: 5vh;
+    display: flex;
+}
+
+.active-button {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.circular-button {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin-right: 16px;
+    cursor: pointer;
+}

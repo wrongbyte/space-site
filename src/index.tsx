@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Destination from './pages/Destination';
+import Crew from './pages/Crew';
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/destination" element={<Destination/>}/>
+        <Route path="/crew" element={<Crew/>}/>
       </Routes>
     </Router>
   </React.StrictMode>,
