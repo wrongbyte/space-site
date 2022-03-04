@@ -11,4 +11,93 @@
     height: 100vh;
     margin: 0;
     width: 100vw;
+    color: white;
+}
+
+.terminology {
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+}
+
+.technology-info {
+    position: absolute;
+    top: 40vh;
+    left: 10vw;
+    display: flex;
+    gap: 50px;
+}
+
+.technology-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+}
+
+.technology-name {
+    text-transform: uppercase;
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    color: white;
+}
+
+.technology-description {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+}
+
+.technology-image {
+    height: 70%;
+    position: absolute;
+    right: 0px;
+    bottom: 5vh;
+}
+
+.technology-nav {
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.technology-nav-button, .technology-nav-button-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology-nav-button {
+    width: 80px;
+    height: 80px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    border-radius: 50%;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.technology-nav-button-active {
+    width: 70px;
+    height: 70px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    margin-right: 16px;
+    cursor: pointer;
 }

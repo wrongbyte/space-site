@@ -70,7 +70,6 @@
 }
 
 .active-button {
-    cursor: pointer;
     width: 15px;
     height: 15px;
     background: white;
@@ -80,7 +79,6 @@
 }
 
 .circular-button {
-    cursor: pointer;
     width: 15px;
     height: 15px;
     background: rgba(255, 255, 255, 0.3);

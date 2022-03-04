@@ -15,11 +15,10 @@ export default function Crew() {
                 <span className='role'>{data.crew[crewIndex].role}</span>
                 <span className='name'>{data.crew[crewIndex].name}</span>
                 <span className='bio'>{data.crew[crewIndex].bio}</span>
-                <div className='crew-navbar'>
+                <nav className='crew-navbar'>
                     {
                     data.crew.map((crewMember, index) => {
                         if (index === crewIndex) {
-                            console.log(crewIndex)
                             return (
                                 <div onClick={ (event) => getCrewIndex(event, index) } key={index} className='active-button'></div>
                             )
@@ -29,7 +28,7 @@ export default function Crew() {
                         )
                     })
                     }
-                </div>
+                </nav>
             </section>
 
             <img className='crew-image' src={data.crew[crewIndex].images.png}></img>
