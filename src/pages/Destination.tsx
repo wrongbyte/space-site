@@ -21,7 +21,8 @@ export default function Destination() {
                                 return (
                                     <span onClick={(event) => { getDestinationIndex(event, index); }} key={index} className='nav-item active-destination' data-index={index}>{destination.name}</span>
                                 )
-                            }  else return (
+                            }
+                            return (
                                 <span onClick={(event) => { getDestinationIndex(event, index); }} key={index} className='nav-item' data-index={index}>{destination.name}</span>
                             )
                         })

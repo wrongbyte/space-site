@@ -21,7 +21,7 @@ export default function Navbar() {
                 
                 <span id='crew' className='nav-item'><b>02</b><span className='page-name'><Link to='/crew'>CREW</Link></span></span>
                 
-                <span id='technology' className='nav-item'><b>03</b><span className='page-name'>TECHNOLOGY</span></span>
+                <span id='technology' className='nav-item'><b>03</b><span className='page-name'><Link to='/technology'>TECHNOLOGY</Link></span></span>
 
             </div>
         </div>

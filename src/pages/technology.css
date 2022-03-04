@@ -1,0 +1,14 @@
+:root {
+    --desktop-technology-image: url('../assets/technology/background-technology-desktop.jpg');
+    --tablet-technology-image: url('../assets/technology/background-technology-tablet.jpg');
+    --mobile-technology-image: url('../assets/technology/background-technology-mobile.jpg');
+}
+
+.technology {
+    background: var(--desktop-technology-image) no-repeat center center fixed; 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+}

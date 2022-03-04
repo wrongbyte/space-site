@@ -24,7 +24,7 @@ export default function Crew() {
                                 <div onClick={ (event) => getCrewIndex(event, index) } key={index} className='active-button'></div>
                             )
                         }
-                        else return (
+                        return (
                             <div onClick={ (event) => getCrewIndex(event, index) } key={index} className='circular-button'></div>
                         )
                     })
