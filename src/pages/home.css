@@ -65,12 +65,28 @@
 }
 
 /* Tablet view */
-@media(max-width:1000px) {
+@media(max-width:1020px) {
     .homepage{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 30vh;
+        flex-direction: column;
         background: var(--tablet-index-image) no-repeat;
         background-position:center ;
         background-size: cover;
     }
+
+    .info {
+        padding-top: 30vh;
+        position: static;
+    }
+
+    #circle {
+        position: static;
+        margin-bottom: 5vh;
+    }
 }
+
 
 /* Phone view */
