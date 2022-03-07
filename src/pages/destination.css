@@ -130,3 +130,29 @@
     width: 30vw;
     height: 30vw;
 }
+
+@media(max-width:1020px) {
+    .destination {
+        height: 100%;
+        right: 0px;
+        top: 0px;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background: var(--tablet-destination-image) no-repeat;
+        background-position:center ;
+        background-size: cover;
+    }
+
+    .page-title {
+        padding-top: 30vh;
+        align-self: flex-start;
+    }
+
+    .page-title, .destination-image, .destination-info {
+        position: static;
+    }
+
+}

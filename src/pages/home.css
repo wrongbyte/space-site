@@ -80,6 +80,7 @@
     .info {
         padding-top: 30vh;
         position: static;
+        text-align: center;
     }
 
     #circle {
