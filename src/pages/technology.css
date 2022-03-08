@@ -101,3 +101,47 @@
     margin-right: 16px;
     cursor: pointer;
 }
+
+@media(max-width:1020px) {
+    .technology {
+        height: 100%;
+        background: var(--tablet-technology-image) no-repeat;
+        background-position:center ;
+        background-size: cover;
+    }
+
+    .technology-nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .page-title {
+        border: 2px solid red;
+        position: relative;
+        top: -10vh;
+        left: -15vw;
+    }
+    .technology-wrapper {
+        margin-top: 20vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .technology-text {
+        margin-bottom: 15vh;
+    }
+
+    .technology-info {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .technology-image {
+        width: 100%;
+        position: static;
+    }
+}
