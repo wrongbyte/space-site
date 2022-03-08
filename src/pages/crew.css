@@ -86,3 +86,39 @@
     margin-right: 16px;
     cursor: pointer;
 }
+
+@media(max-width:1020px) {
+    .crew {
+        height: 100%;
+        background: var(--tablet-crew-image) no-repeat;
+        background-position:center ;
+        background-size: cover;
+    }
+
+    .crew-info {
+        position: static;
+    }
+    .page-title {
+        position: relative;
+        top: -10vh;
+        left: -15vw;
+    }
+    .crew-wrapper {
+        text-align: center;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .crew-image {
+        position: static;
+        height: 50%;
+        width: auto;
+    }
+
+    .crew-navbar {
+        display: flex;
+        justify-content: center;
+    }
+}
