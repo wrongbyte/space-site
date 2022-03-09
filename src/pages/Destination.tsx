@@ -35,15 +35,18 @@ export default function Destination() {
 
                 <hr className='dest-line'/>
                 
-                <div className='destination-time'>
-                    <div>
-                        <p className='destination-time-title'>avg. distance</p>
-                        <p className='destination-time-info'>{data.destinations[destinationIndex].distance}</p>
+                <div className='destination-time-wrapper'>
+                    <div className='destination-time'>
+                        <div>
+                            <p className='destination-time-title'>avg. distance</p>
+                            <p className='destination-time-info'>{data.destinations[destinationIndex].distance}</p>
+                        </div>
+                        <div>
+                            <p className='destination-time-title'>Est. travel time</p>
+                            <p className='destination-time-info'>{data.destinations[destinationIndex].travel}</p>
+                        </div>
                     </div>
-                    <div>
-                        <p className='destination-time-title'>Est. travel time</p>
-                        <p className='destination-time-info'>{data.destinations[destinationIndex].travel}</p>
-                    </div>
+                    <div className='test'></div>
                 </div>
 
             </section>
