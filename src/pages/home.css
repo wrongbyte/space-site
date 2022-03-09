@@ -89,5 +89,21 @@
     }
 }
 
-
 /* Phone view */
+@media(max-width: 520px) {
+    .info {
+        font-size: 15px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    
+    .space-text {
+        font-size: 80px;
+    }
+
+    .first-phrase {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+}

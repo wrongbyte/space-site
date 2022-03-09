@@ -122,3 +122,19 @@
         justify-content: center;
     }
 }
+
+@media(max-width: 520px) {
+    .crew-info {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .name {
+        font-size: 24px;
+    }
+    .role {
+        font-size: 16px;
+    }
+    .crew-info {
+        gap: 0px;
+    }
+}
