@@ -7,49 +7,52 @@ export default function Destination() {
     const getDestinationIndex = (e: any, value: number) => setDestinationIndex(value);
 
     return (
+
         <main className="destination">
-            <span className='page-title'><span className='page-number'>01</span> PICK YOUR DESTINATION</span>
+            <div className='content'>
+                <span className='page-title'><span className='page-number'>01</span> PICK YOUR DESTINATION</span>
 
-            <img src={data.destinations[destinationIndex].images.png} className='destination-image'></img>
+                <img src={data.destinations[destinationIndex].images.png} className='destination-image'></img>
 
-            <section className='destination-info'>
+                <section className='destination-info'>
 
-                <nav className='destination-nav'>
-                    {
-                        data.destinations.map((destination, index) => {
-                            if (index === destinationIndex) {
+                    <nav className='destination-nav'>
+                        {
+                            data.destinations.map((destination, index) => {
+                                if (index === destinationIndex) {
+                                    return (
+                                        <span onClick={(event) => { getDestinationIndex(event, index); }} key={index} className='nav-item active-destination' data-index={index}>{destination.name}</span>
+                                    )
+                                }
                                 return (
-                                    <span onClick={(event) => { getDestinationIndex(event, index); }} key={index} className='nav-item active-destination' data-index={index}>{destination.name}</span>
+                                    <span onClick={(event) => { getDestinationIndex(event, index); }} key={index} className='nav-item' data-index={index}>{destination.name}</span>
                                 )
-                            }
-                            return (
-                                <span onClick={(event) => { getDestinationIndex(event, index); }} key={index} className='nav-item' data-index={index}>{destination.name}</span>
-                            )
-                        })
-                    }
-                </nav>
+                            })
+                        }
+                    </nav>
 
-                <span className='destination-name'>{data.destinations[destinationIndex].name}</span>
+                    <span className='destination-name'>{data.destinations[destinationIndex].name}</span>
 
-                <p className='destination-description'>{data.destinations[destinationIndex].description}</p>
+                    <p className='destination-description'>{data.destinations[destinationIndex].description}</p>
 
-                <hr className='dest-line'/>
-                
-                <div className='destination-time-wrapper'>
-                    <div className='destination-time'>
-                        <div>
-                            <p className='destination-time-title'>avg. distance</p>
-                            <p className='destination-time-info'>{data.destinations[destinationIndex].distance}</p>
+                    <hr className='dest-line'/>
+                    
+                    <div className='destination-time-wrapper'>
+                        <div className='destination-time'>
+                            <div>
+                                <p className='destination-time-title'>avg. distance</p>
+                                <p className='destination-time-info'>{data.destinations[destinationIndex].distance}</p>
+                            </div>
+                            <div>
+                                <p className='destination-time-title'>Est. travel time</p>
+                                <p className='destination-time-info'>{data.destinations[destinationIndex].travel}</p>
+                            </div>
                         </div>
-                        <div>
-                            <p className='destination-time-title'>Est. travel time</p>
-                            <p className='destination-time-info'>{data.destinations[destinationIndex].travel}</p>
-                        </div>
-                    </div>
-                    <div className='test'></div>
+                        <div className='test'></div>
                 </div>
-
             </section>
+
+        </div>
         </main>
     )
 }

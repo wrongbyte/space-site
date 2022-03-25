@@ -32,6 +32,11 @@
     gap: 50px;
 }
 
+.technology-nav-button:hover, .technology-nav-button-active:hover {
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
 .technology-text {
     display: flex;
     flex-direction: column;

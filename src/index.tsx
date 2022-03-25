@@ -8,6 +8,7 @@ import Destination from './pages/Destination';
 import Crew from './pages/Crew';
 import Technology from './pages/Technology';
 import './index.css';
+import './pages/animations.css'
 
 ReactDOM.render(
   <React.StrictMode>

@@ -14,6 +14,7 @@
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
+
 .destination {
     background: var(--desktop-destination-image) no-repeat;
     background-size: cover;
@@ -123,6 +124,7 @@
 }
 
 .destination-image {
+    animation: float 4s ease-in-out infinite;
     position: absolute;
     left: 10vw;
     top: 35vh;
