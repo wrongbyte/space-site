@@ -9,10 +9,11 @@ export default function Destination() {
     return (
 
         <main className="destination">
-            <div className='content'>
+            <div className='content dest'>
                 <span className='page-title'><span className='page-number'>01</span> PICK YOUR DESTINATION</span>
-
-                <img src={data.destinations[destinationIndex].images.png} className='destination-image'></img>
+                <div className='img-wrapper'>
+                    <img src={data.destinations[destinationIndex].images.png} className='destination-image'/>
+                </div>
 
                 <section className='destination-info'>
 
@@ -52,7 +53,7 @@ export default function Destination() {
                 </div>
             </section>
 
-        </div>
+            </div>
         </main>
     )
 }

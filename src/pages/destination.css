@@ -133,21 +133,28 @@
 }
 
 @media(max-width:1020px) {
+
     .destination {
+        position: fixed;
+        z-index: -1;
+        overflow: scroll;
         height: 100%;
         right: 0px;
         top: 0px;
+        bottom: 0px;
         display: flex;
         gap: 50px;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        background: var(--tablet-destination-image) no-repeat;
+        background: var(--tablet-destination-image);
         background-position:center ;
         background-size: cover;
     }
 
     .destination-info {
+        position: static;
+        margin-bottom: 5vh;
         text-align: center;
     }
 
@@ -156,7 +163,24 @@
         align-self: flex-start;
     }
 
-    .page-title, .destination-image, .destination-info {
+    .content.dest {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img-wrapper  {
+        display: flex;
+        justify-content: center;
+    }
+
+    .destination-image {
+        top: -5vh;
+        position: relative;
+        display: block;
+        margin-right: 20vw;
+    }
+
+    .page-title {
         position: static;
     }
 
@@ -210,7 +234,7 @@
     }
 
     .destination-time-wrapper {
-        position: static;
+        position: relative;
         bottom: 0px;
         display: block;
     }
