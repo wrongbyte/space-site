@@ -2,7 +2,7 @@ name: Take screenshots and upload them to S3
 
 on:
   push:
-    branches: [main, screenshot-pipeline]
+    branches: [main]
 
 jobs:
   build:
