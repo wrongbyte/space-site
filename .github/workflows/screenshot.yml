@@ -1,0 +1,30 @@
+name: Take screenshots and upload them to S3
+
+on:
+  push:
+    branches: [main, screenshot-pipeline]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: run cypress
+        uses: cypress-io/github-action@v2
+        with:
+          start: npm start
+          browser: chrome
+          headless: true
+      - name: Upload image to S3
+        run: aws s3 sync ./images s3://screenshot-site-pipeline --acl=public-read
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: 'sa-east-1'
